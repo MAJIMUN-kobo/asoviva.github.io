@@ -175,8 +175,93 @@
       position: relative;
       width: 85px;
       height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1002;
+      margin-right: -10px;
+   }
+   .rotating_text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation: rotate-anim 12s linear infinite;
+   }
+   .rotating_text svg {
+      fill: #0073e6;
+      letter-spacing: 1.2px;
+   }
+   .hamburger_lines {
+      width: 50px;
+      height: 50px;
+      background:linear-gradient(135deg, #ff66aa, #ff88bb);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      box-shadow: 0 4px 8px rgba(255, 102, 170, 0.3);
+      z-index: 2;
+   }
+   .hamburger_lines span {
+      display: block;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 10p
+      transition all 0.3s ease;
+   }
+   @keyframes rotate-anim {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+     }
+
+   .menu_input:checked ~ .menu_btn .hamburger_lines span:nth-child(1) {
+      transform: translateY(4px) rotate(45deg);
+   }
+   .menu_input:checked ~ .menu_btn .hamburger_lines span:nth-child(2) {
+      transform: translateY(-4px) rotate(-45deg);
+   }
+   .main_goods_menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 85%;
+      height: 100vh;
+      background: linear-gradient(to bottom, #ffffff, #f5faff);
+      padding: 100px 30px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0px;
+      transform: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      overflow-y: auto;
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+   }
+   .menu_input:checked ~ .main_goods_menu {
+      right: 0; /* メニューが表示される位置 */
+   }
+   .main_goods_menu > li {
+      width: 100%;
+      height: auto;
+      padding: 20px 0;
+      border-bottom: 1px solid #eef5ff;
+      display: block;
+   }
+   .creator_item {
+      color: #333;
+      font-weight: bold;
    }
 }
+@media screen and (min-width: 769px) {
+  .menu_btn, .menu_input {
+    display: none;
+  }
+}
+
 
 /*swiper↓*/
 .swiper_visual {
