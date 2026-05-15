@@ -393,3 +393,100 @@
 }
 /* ASOVIVAとは↑ */
 
+/* ピックアップ商品↓*/
+:root {
+  --primary-pink: #ff66aa;
+  --primary-blue: #66ccff;
+  --accent-yellow: #ffcc00;
+  --accent-green: #44dd88;
+  --border-dark: #2d2d2d;
+  --bg-dot: #e0eaf5;
+}
+
+.pick_up_section {
+   padding: 60px 0px;
+   background-image: radial-gradient(var(--bg-dot) 2px, transparent 2px);
+   background-size: 30px 30px;
+}
+.section_title {
+   text-align: center;
+   font-size: 32px;
+   font-weight: 900;
+   margin-bottom: 60px;
+}
+
+.container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+
+.product_zone {
+   margin-bottom: 80px;
+   padding: 20px;
+   border-radius: 30px;
+   background: rgba(255, 255, 255, 0.5);
+}
+
+.zone_3d {border-left: 10px solid var(--primary-blue);}
+.zone_aksta{border-left: 10px solid var(--primary-pink);}
+.zone_sticker{border-left: 10px solid var(--accent-yellow);}
+.zone_badge{border-left: 10px solid var(--accent-green);}
+.zone_aksta_stand {border-left: 10px solid var(--primary-blue);}
+
+.zone_name {
+   font-size: 24px;
+   font-weight: 900;
+   margin-bottom: 25px;
+   display: inline-block;
+   padding: 5px 20px;
+   background: var(--border-dark);
+   color: #fff;
+   gap: 25px;
+   transform: skew(-10deg); /* タイトルを斜めにする */
+}
+
+/* グリッド */
+.product_grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* ここを固定にする */
+   gap: 25px;
+}
+
+.asoviva_card {
+   background-color: #fff;
+   border: 3px solid var(--border-dark);
+   border-radius: 16px;
+   padding: 12px;
+   transform: all 0.3s cubic-bezier(0.175,0.885,0.32,1.2);
+   box-shadow: 6px 6px 0 var(--border-dark);
+}
+
+.asoviva_card:hover {
+   transform: translateY(-5px) rotate(1deg);
+   box-shadow: 10px 10px 0 var(--primary-pink);
+}
+
+.card_img_box {
+   aspect-ratio: 1 / 1;
+   border-radius: 10px;
+   overflow: hidden;
+   border: 2px solid var(--border-dark);
+   margin-bottom: 10px;
+}
+
+.card_img_box img { width: 100%; height: 100%; object-fit: cover; }
+
+
+@media screen and (max-width: 1024px) {
+   .product_grid {
+      grid-template-columns: repeat(2, 1fr); /* タブレットサイズで2列に */
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .product_grid {
+      grid-template-columns: repeat(2,1fr);
+      gap: 15px;
+   }
+   .zone_name{font-size: 20px;}
+}
+/* ピックアップ商品↑ */
+
+/* ニュース・お知らせ */
