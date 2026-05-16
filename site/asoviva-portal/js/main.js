@@ -29,30 +29,28 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-// 商品ピックアップ
+// 商品ピックアップ↓
 const productData = [
-  { id: 1, category: "aksta", name: "アクリルキーホルダー", price: "1,200", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png" },
-  { id: 2, category: "sticker", name: "ステッカー", price: "500", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png" },
-  { id: 3, category: "3d", name: "3Dキーホルダー", price: "1,800", img: "./img/CCFukuoka_62img/keyring/key_ccf62_koogii8.jpg" },
-  { id: 4, category: "badge", name: "缶バッジ", price: "600", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_usanomito.png" },
-  { id: 5, category: "aksta_stand", name: "アクリルスタンド", price: "1,500", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
-  { id: 1, category: "aksta", name: "アクリルキーホルダー", price: "1,200", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png" },
-  { id: 2, category: "sticker", name: "ステッカー", price: "500", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png" },
-  { id: 3, category: "3d", name: "3Dキーホルダー", price: "1,800", img: "./img/CCFukuoka_62img/keyring/key_ccf62_koogii8.jpg" },
-  { id: 4, category: "badge", name: "缶バッジ", price: "600", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_usanomito.png" },
-  { id: 5, category: "aksta_stand", name: "アクリルスタンド", price: "1,500", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
-  { id: 1, category: "aksta", name: "アクリルキーホルダー", price: "1,200", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png" },
-  { id: 2, category: "sticker", name: "ステッカー", price: "500", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png" },
-  { id: 3, category: "3d", name: "3Dキーホルダー", price: "1,800", img: "./img/CCFukuoka_62img/keyring/key_ccf62_koogii8.jpg" },
-  { id: 4, category: "badge", name: "缶バッジ", price: "600", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_usanomito.png" },
-  { id: 5, category: "aksta_stand", name: "アクリルスタンド", price: "1,500", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
-  { id: 1, category: "aksta", name: "アクリルキーホルダー", price: "1,200", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png" },
-  { id: 2, category: "sticker", name: "ステッカー", price: "500", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png" },
-  { id: 3, category: "3d", name: "3Dキーホルダー", price: "1,800", img: "./img/CCFukuoka_62img/keyring/key_ccf62_koogii8.jpg" },
-  { id: 4, category: "badge", name: "缶バッジ", price: "600", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_usanomito.png" },
-  { id: 5, category: "aksta_stand", name: "アクリルスタンド", price: "1,500", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
-
-
+  { id: 1, category: "aksta", name: "アクリルキーホルダー", price: "####", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png" },
+  { id: 2, category: "sticker", name: "ステッカー", price: "####", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png" },
+  { id: 3, category: "3d", name: "3Dキーホルダー", price: "####", img: "./img/CCFukuoka_62img/keyring/key_ccf62_koogii8.jpg" },
+  { id: 4, category: "badge", name: "缶バッジ", price: "####", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_usanomito.png" },
+  { id: 5, category: "aksta_stand", name: "アクリルスタンド", price: "####", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
+  { id: 6, category: "aksta", name: "アクリルキーホルダー", price: "####", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_sherin1.png" },
+  { id: 7, category: "sticker", name: "ステッカー", price: "####", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_hihachi1.PNG" },
+  { id: 8, category: "3d", name: "3Dキーホルダー", price: "####", img: "./img/CCFukuoka_62img/keyring/key_ccf62_harumotto3.jpg" },
+  { id: 9, category: "badge", name: "缶バッジ", price: "####", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_kanae1.png" },
+  { id: 10, category: "aksta_stand", name: "アクリルスタンド", price: "####", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
+  { id: 11, category: "aksta", name: "アクリルキーホルダー", price: "####", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_hachi1.png" },
+  { id: 12, category: "sticker", name: "ステッカー", price: "####", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_runrun1.png" },
+  { id: 13, category: "3d", name: "3Dキーホルダー", price: "####", img: "./img/CCFukuoka_62img/keyring/key_ccf62_syenrin10.jpg" },
+  { id: 14, category: "badge", name: "缶バッジ", price: "####", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_runrun2.png" },
+  { id: 15, category: "aksta_stand", name: "アクリルスタンド", price: "####", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
+  { id: 16, category: "aksta", name: "アクリルキーホルダー", price: "####", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_sango1.png" },
+  { id: 17, category: "sticker", name: "ステッカー", price: "####", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei2.png" },
+  { id: 18, category: "3d", name: "3Dキーホルダー", price: "####", img: "./img/CCFukuoka_62img/keyring/key_ccf62_mana7.jpg" },
+  { id: 19, category: "badge", name: "缶バッジ", price: "####", img: "../img/CCFukuoka_63img/badge/bdg_ccf63_hibati3.png" },
+  { id: 20, category: "aksta_stand", name: "アクリルスタンド", price: "####", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
 ];
 
 function renderZones() {
@@ -86,4 +84,4 @@ function renderZones() {
 }
 
 document.addEventListener('DOMContentLoaded', renderZones);
-// 商品のピックアップ
+// 商品のピックアップ↑

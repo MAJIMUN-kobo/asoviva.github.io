@@ -7,7 +7,7 @@
 .main_header {
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 3px solid #000000;
   position: relative;
   z-index: 1000;
 }
@@ -271,7 +271,8 @@
    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
    /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
    padding: 40px 0;
-   position: relative;
+   position: relative;;
+   border-bottom: 3px solid #000;
 }
 
 .swiper {
@@ -280,7 +281,7 @@
    max-width: 1200px;
    aspect-ratio: 1200 / 500;
    overflow: visible !important;
-   margin: 0 auto;
+   margin: 0 auto;;
 }
 
 
@@ -489,4 +490,45 @@
 }
 /* ピックアップ商品↑ */
 
-/* ニュース・お知らせ */
+/* ニュース・お知らせ↓ */
+.news_section {
+   padding: 80px 0;
+   background-image: radial-gradient(var(--bg-dot) 2px, transparent 2px);
+   background-size: 30px 30px;
+}
+
+.news_container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.toy_title_area {
+   text-align: center;
+   margin-bottom: 60px;
+}
+.toy_title_area .section_title {
+   font-size: 36px;
+   font-weight: 900;
+   color: var(--border-dark);
+   margin-bottom: 10px;
+}
+
+.toy_title_area span {
+   display: inline-block;
+   padding: 2px 8px;
+   border: 3px solid var(--border-dark);
+   border-radius: 8px;
+   transform: rotate(-5deg);
+   margin: 0 2px;;
+}
+
+/* 文字の中の色↓ */
+.toy_title_area .moji_a { background: var(--primary-pink); color: #fff; transform: rotate(-5deg);}
+.toy_title_area .moji_e { background: var(--accent-yellow); color: var(--border-dark); transform: rotate(8deg); }
+.toy_title_area .moji_w { background: var(--primary-blue); color: #fff; transform: rotate(-3deg);}
+.toy_title_area .moji_s { background: var(--accent-green); color: #fff; transform: rotate(5deg);}
+.toy_title_area .moji_e2 { background: var(--primary-pink); color: #fff; transform: rotate(-6deg);}
+
+
+/* ニュース・お知らせ↑ */
