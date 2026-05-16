@@ -513,6 +513,11 @@
    color: var(--border-dark);
    margin-bottom: 10px;
 }
+.section_subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 .toy_title_area span {
    display: inline-block;
@@ -530,5 +535,13 @@
 .toy_title_area .moji_s { background: var(--accent-green); color: #fff; transform: rotate(5deg);}
 .toy_title_area .moji_e2 { background: var(--primary-pink); color: #fff; transform: rotate(-6deg);}
 
-
+@media screen and (max-width: 768px) {
+  .toy_title_area .section_title {
+   font-size: 28px;
+}
+  .toy_title_area span {
+   padding: 1px 6px;
+}
+}
 /* ニュース・お知らせ↑ */
+

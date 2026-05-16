@@ -49,7 +49,7 @@ const productData = [
   { id: 16, category: "aksta", name: "アクリルキーホルダー", price: "####", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_sango1.png" },
   { id: 17, category: "sticker", name: "ステッカー", price: "####", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei2.png" },
   { id: 18, category: "3d", name: "3Dキーホルダー", price: "####", img: "./img/CCFukuoka_62img/keyring/key_ccf62_mana7.jpg" },
-  { id: 19, category: "badge", name: "缶バッジ", price: "####", img: "../img/CCFukuoka_63img/badge/bdg_ccf63_hibati3.png" },
+  { id: 19, category: "badge", name: "缶バッジ", price: "####", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_hibati3.png" },
   { id: 20, category: "aksta_stand", name: "アクリルスタンド", price: "####", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
 ];
 
