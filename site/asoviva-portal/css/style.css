@@ -210,8 +210,8 @@
       width: 20px;
       height: 3px;
       background-color: #fff;
-      border-radius: 10p
-      transition all 0.3s ease;
+      border-radius: 10px;
+      transition: all 0.3s ease;
    }
    @keyframes rotate-anim {
       from { transform: rotate(0deg); }
@@ -237,7 +237,7 @@
       align-items: flex-start;
       justify-content: flex-start;
       gap: 0px;
-      transform: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
       overflow-y: auto;
       box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
    }
@@ -255,7 +255,61 @@
       color: #333;
       font-weight: bold;
    }
+   .goods_dropdown {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .goods_nav {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-bottom: 10px;
+      font-weight: bold;
+   }
+   .mega_menu_container {
+      position: static;
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 10px 0 0 10px;
+   }
+   .mega_menu_inner {
+      flex-direction: column;
+      gap: 25px;
+      padding: 0;
+   }
+   .menu_column {
+      width: 100%;
+   }
+   .menu_title {
+      font-size: 16px;
+      padding: 0 0 5px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+   }
+   .goods_menu a, .digitalgames_munu a {
+     font-size: 14px;
+      margin-bottom: 12px;
+      justify-content: flex-start; 
+   }
+   .sns_item {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+   }
+   .ASOVIVA_SNS {
+    width: 80%;
+    justify-content: center;
+    padding: 14px 0;
+  }
+
 }
+
 @media screen and (min-width: 769px) {
   .menu_btn, .menu_input {
     display: none;
@@ -534,6 +588,7 @@
 .toy_title_area .moji_w { background: var(--primary-blue); color: #fff; transform: rotate(-3deg);}
 .toy_title_area .moji_s { background: var(--accent-green); color: #fff; transform: rotate(5deg);}
 .toy_title_area .moji_e2 { background: var(--primary-pink); color: #fff; transform: rotate(-6deg);}
+
 
 @media screen and (max-width: 768px) {
   .toy_title_area .section_title {
