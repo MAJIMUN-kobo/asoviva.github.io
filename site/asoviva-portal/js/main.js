@@ -93,3 +93,5 @@ function renderZones() {
 
 document.addEventListener('DOMContentLoaded', renderZones);
 // 商品のピックアップ↑
+
+
