@@ -9,9 +9,104 @@
 
 </head>
 <body>
-    <h2>comic_city_fukuoka64のページ</h2>
+    <header class="main_header">
+      <nav class="main_nav">
+        <a href="./index.html" class="logo_link">
+          <div class="logo"><img src="./img/main_imgs/asoviva_logo.png" alt="ASOVIVAlogo"></div>
+        </a>
+
+      <!--スマホ用メニュー  -->
+      <input type="checkbox" id="menu_input" class="menu_input">
+      <label for="menu_input" class="menu_btn">
+        <div class="rotating_text">
+          <svg viewBox="0 0 100 100">
+            <path id="circlePath" d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" fill="none"/>
+            <text font-size="9.2" font-weight="bold">
+              <textPath xlink:href="#circlePath">
+                • ASOVIVA OFFICIAL SITE • ASOVIVA OFFICIAL SITE •
+              </textPath>
+            </text>>
+          </svg>
+        </div>
+        <div class="hamburger_lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+
+        <!-- メガメニュー -->
+        <ul class="main_goods_menu">
+          <li class="goods_dropdown">
+            <a href="#" class="goods_nav">各種商品</a>
+
+            <div class="mega_menu_container">
+              <div class="mega_menu_inner">
+                <div class="menu_column">
+                  <div class="menu_title">
+                    <span class="icon">グッズ販売</span>
+                  </div>
+                  <ul class="goods_menu">
+                    <li><a href="./comic-city-fukuoka64.html">Comic City福岡64</a></li>
+                    <li><a href="https://sites.google.com/ryukyugame.page/asoviva-mg-project/ccfukuoka63_flyer" target="_blank">Comic City福岡63</a></li>
+                    <li><a href="https://sites.google.com/ryukyugame.page/asoviva-mg-project/ccfukuoka62_flyer" target="_blank">Comic City福岡62</a></li>
+                  </ul>
+                </div>
+
+                <div class="menu_column">
+                  <div class="menu_title">
+                    <span class="icon">デジタルゲーム</span>
+                  </div>
+                  <ul class="digitalgames_munu">
+                    <li><a href="./setunagame.html">刹那の「ワタシモイレテヨ」斬り</a></li>
+                    <li><a href="./runrungame.html">ルンルンのおいしぃ！らっしゅ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="./event.html">イベント情報</a></li>
+          <li><a href="./notice.html">お知らせ</a></li>
+          <li><a href="./creator.html">クリエイター</a></li>
+          <li class="sns_item">
+            <a href="https://x.com/Asoviva2024" target="_blank" class="ASOVIVA_SNS">
+              <span class="sns_text">公式SNS</span>
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="page_header_banner">
+            <h1>Product_list</h1>
+            <p>商品一覧</p>
+        </div>
+
+        <div class="products_layout">
+            <aside class="sidebar">
+                <div class="category_list" id="category_list"></div>
+
+                <div class="sidebar_info_box">
+                    <i class="fa-solid fa-truck"></i>
+                    <p><strong>2次創作:にじさんじ オールキャラ</strong></p>
+                    <p style="color: #666; margin-top: 5px;">2次創作を中心に販売しています。</p>
+                </div>
+
+                <div class="sidebar_info_box">
+                    <i class="fa-solid fa-headset"></i>
+                    <p><strong>新作商品も登場中</strong></p>
+                    <p style="color: #666; margin-top: 5px;">新商品をぜひチェックしてください！</p>
+                </div>
+            </aside>
+
+            <div class="main_content" id="products_container"></div>
+        </div>
+    </main>
 
     <!--　外部ファイル　-->
-    <script src = "js/main.js"></script>
+    <script src = "js/product_page.js"></script>
 </body>
 </html>
