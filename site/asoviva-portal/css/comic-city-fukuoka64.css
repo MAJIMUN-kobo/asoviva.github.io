@@ -1,10 +1,30 @@
 * {
+   box-sizing: border-box;
    margin: 0;
    padding: 0;
 }
 body {
    font-family: 'Noto Sans JP', sans-serif;
+   background-color: #fafafa;
+   color: #333;
 }
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+
 
 /* ナビゲーション↓ */
 .main_header {
@@ -318,3 +338,222 @@ body {
     display: none;
   }
 }
+
+/* 商品ページ */
+.page_header_banner {
+   text-align: center;
+   padding: 40px 20px;
+   background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+   color: #000;
+}
+
+.page_header_banner h1 {
+   font-size: 40px;
+   letter-spacing: 0.1em;
+   margin-bottom: 5px;
+   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page_header_banner p {
+  font-weight: bold;
+}
+
+.products_layout {
+   max-width: 1200px;
+   margin: 40px auto;
+   padding: 0 20px;
+   display: flex;
+   align-items: flex-start;
+   gap: 30px;
+}
+
+.sidebar {
+   width: 220px;
+   flex-shrink: 0;
+}
+
+.category_list {
+   background-color: #fff;
+   border: 1px solid #eee;
+   border-radius: 8px;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.category_title {
+   padding: 15px;
+   font-weight: bold;
+   border-bottom: 1px solid #eee;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.category_item {
+   display: flex;
+   align-items: center;
+   padding: 12px 15px;
+   border-bottom: 1px solid #f5f5f5;
+   cursor: pointer;
+   font-size: 14px;
+   transition: all 0.3s;
+   gap: 10px;
+}
+
+.category_item:hover {
+   background-color: #f9f9f9;
+}
+
+.category_item .active {
+   background-color: #ff66aa;
+   color: #fff;
+   font-weight: bold;
+}
+
+.sidebar_info_box {
+   background-color: #fff;
+   border: 1px solid #eee;
+   border-radius: 8px;
+   padding: 15px;
+   font-size: 12px;
+   text-align: center;
+}
+
+.sidebar_info_box i {
+   font-size: 24px;
+   color: #0073e6;
+   margin-bottom: 8px;
+}
+
+.main_content {
+   flex-grow: 1;
+}
+
+/* カテゴリー別のセクション */
+.category_section {
+   background-color: #fff;
+   border-radius: 12px;
+   padding: 20px 30px;
+   margin-bottom: 30px;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.section_header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+   padding: 10px;
+   border-bottom: 2px solid #f0f0f0;
+}
+
+.section_title {
+   font-size: 20px;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.section_title_icon {
+   width: 30px;
+   height: 30px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 6px;
+   color: #fff;
+   font-size: 16px;
+}
+
+.see_all_link {
+   font-size: 13px;
+   color: #666;
+}
+
+.see_all_link:hover {
+   color: #0073e6;
+}
+
+
+/* 商品4列のグリッドレイアウト */
+.product_grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+}
+
+.product_card {
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   transition: transform 0.2s;
+}
+
+.product_card:hover {
+   transform: translateY(-5px);
+}
+
+.product_img_wrap {
+   width: 100%;
+   aspect-ratio: 1 / 1;
+   background-color: #f9f9f9;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   border: 1px solid #eee;
+}
+
+.product_img_wrap img {
+   width: 80%;
+   height: 80%;
+   object-fit: contain;
+}
+
+.product_info {
+   padding: 5px 0;
+}
+
+.product_name{
+   font-size: 14px;
+   font-weight: bold;
+   margin-bottom: 5px;
+   line-height: 1.4;
+}
+
+.product_price {
+   color: #ff3366;
+   font-size: 16px;
+   font-weight: bold;
+   margin-bottom: 8px;
+}
+.tax_text {
+   font-size: 10px;
+   font-weight: normal;
+}
+
+.product_copyright {
+   font-size: 9px;
+   color: #999;
+}
+
+@media screen and (max-width: 768px) {
+   .products_layout {
+      flex-direction: column;
+   }
+   .sidebar {
+      width: 100%;
+   }
+   .product_grid {
+      grid-template-columns: repeat(2,1fr);
+   }
+   .category_section {
+      padding: 15px;
+   }
+
+}
+
