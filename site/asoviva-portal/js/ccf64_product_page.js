@@ -52,7 +52,7 @@ const productsDB = [
 
    // 缶バッジ↓
    {category: 'badge', name: '缶バッジA', price: 0, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/badge/bdg_ccf63_gaotti.png'},
-   {category: 'badge', name: '缶バッジB', price: 0, creator: 'creator B', copyright: '© 2026 creator B', image: '../img/CCFukuoka_63img/badge/bdg_ccf63_hachi1.png'},
+   {category: 'badge', name: '缶バッジB', price: 0, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hachi1.png'},
    {category: 'badge', name: '缶バッジC', price: 0, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/badge/bdg_ccf63_harumottto1.png'},
    {category: 'badge', name: '缶バッジD', price: 0, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hayatopusu.png'},
    {category: 'badge', name: '缶バッジC', price: 0, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hibati1.png'},
