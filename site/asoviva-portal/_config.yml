@@ -1,2 +1,5 @@
+url: "https://majimun-kobo.github.io/asoviva.github.io/site/asoviva-portal/"
+baseurl: "/asoviva.hithub.io"
+
 plugins:
   - jekyll-sitemap
