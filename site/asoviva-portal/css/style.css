@@ -168,6 +168,58 @@ body {
 }
 /* メガメニュー↑*/
 
+/* クリエイターメガメニュー */
+.goods_dropdown,
+.creator_dropdown{
+   position: static;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.goods_dropdown:hover .mega_menu_container,
+.creator_dropdown:hover .mega_menu_container {
+   opacity: 1;
+   visibility: visible;
+}
+
+.goods_nav,
+.creator_nav {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   padding: 0 10px;
+}
+
+.menu_column.full_width {
+   flex: 1;
+   width: 100%;
+}
+
+.creator_menu_list {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 15px 30px; /* 縦と横の隙間 */
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.creator_menu_list a {
+   text-decoration: none;
+   color: #333;
+   display: block;
+   transition: color 0.3s;
+}
+
+.creator_menu_list li:hover a {
+  color: #0073e6;
+}
+
+
+/* クリエイターメガメニュー */
+
+
 /* ナビゲーションスマホ対応 */
 @media screen and (max-width: 768px) {
    .menu_input {
@@ -298,7 +350,7 @@ body {
    .goods_menu a, .digitalgames_munu a {
      font-size: 14px;
       margin-bottom: 12px;
-      justify-content: flex-start; 
+      justify-content: flex-start;
    }
    .sns_item {
     margin-left: 0;
@@ -311,6 +363,34 @@ body {
     padding: 14px 0;
   }
 
+  /* クリエイターページスマホ対応 */
+  .goods_dropdown,
+   .creator_dropdown {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .goods_nav,
+   .creator_nav {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-bottom: 10px;
+      font-weight: bold;
+   }
+
+   .creator_menu_list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 15px;
+      width: 100%;
+   }
+
+   .creator_menu_list a {
+      font-size: 14px;
+      margin-bottom: 0;
+   }
+    /* クリエイターページスマホ対応 */
 }
 
 @media screen and (min-width: 769px) {
