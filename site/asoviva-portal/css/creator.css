@@ -390,7 +390,6 @@ body {
       font-size: 14px;
       margin-bottom: 0;
    }
-    /* クリエイターページスマホ対応 */
 }
 
 @media screen and (min-width: 769px) {
@@ -401,4 +400,123 @@ body {
 
 /* ヘッダー */
 
-/* クリエイターページ一覧 */
+/* クリエイターページ一覧↓ */
+
+.main_contents {
+   background-image: radial-gradient(var(--bg-dot, #ccdaeb) 2px, transparent 2px);
+   background-size: 24px 24px; /* ドットの間隔 */
+   min-height: 100vh;
+}
+
+.page_header_banner {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #12b8ff;
+  border-bottom: 4px solid #000000;
+  color: #000;
+}
+
+.page_header_banner h1 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+  text-shadow: none;
+}
+
+
+.page_header_banner p {
+   font-size: 14px;
+   font-weight: 800;
+   letter-spacing: 0.1em;
+}
+
+.page_header_banner p {
+  font-weight: bold;
+}
+
+.section_title {
+   font-size: 24px;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 40px;
+   color: #222;
+   position: relative;
+}
+
+.creator_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 40px 20px;
+  justify-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 60px auto 0 auto; 
+  padding: 0 20px;
+}
+
+.creator_card {
+   width: 100%;
+   text-align: center;
+}
+
+.creator_card a {
+   text-decoration: none;
+   color: #333;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.creator_card:hover a {
+  color: #0073e6;
+  transform: translateY(-5px);
+}
+
+.creator_icon {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-bottom: 12px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+   
+}
+
+.creator_icon img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   
+}
+
+.creator_name {
+   font-size: 14px;
+   font-weight: bold;
+   line-height: 1.4;
+   margin: 0;
+   word-break: break-all;
+}
+
+/* クリエイター一覧ページスマホ対応 */
+@media screen and (max-width: 768px) {
+   
+
+  .creator_grid {
+   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+   gap: 25px 10px
+  }
+  .creator_icon {
+   width: 80px;
+   height: 80px;
+  }
+  .creator_name {
+   font-size: 12px;
+  }
+}
+
+
+/* クリエイターページ一覧↑ */
