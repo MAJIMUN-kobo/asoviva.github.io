@@ -480,6 +480,16 @@ body {
 }
 /* aosukeのテーマカラー↑ */
 
+/* よし・ひらのテーマカラー↓ */
+.theme-kakazu {
+  --primary-color: #6a86ff; /* 鮮やかなブルー */
+  --accent-color: #f54189;  /* ネオンピンク */
+  --sub-color: #fff176;     /* キラキラ感を足すネオンイエロー */
+  --bg-gradient: linear-gradient(135deg, rgba(106, 134, 255, 0.2), rgba(245, 65, 137, 0.2));
+  --text-on-btn: #fff;
+}
+/* よし・ひらのテーマカラー↑ */
+
 .creator-profile-main {
    position: relative;
    background-color: var(--bg-base);
