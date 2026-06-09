@@ -460,6 +460,26 @@ body {
 }
 /* renのテーマカラー↑ */
 
+/* kaburagiのテーマカラー↓ */
+.theme-kaburagi {
+  --primary-color: #B9ADB9; 
+  --accent-color: #FFF59D; 
+  --sub-color: #BDE0FE;     
+  --bg-gradient: linear-gradient(135deg, rgba(185, 173, 185, 0.3), rgba(189, 224, 254, 0.3));
+  --text-on-btn: #333;     
+}
+/* kaburagiのテーマカラー↑ */
+
+/* aosukeのテーマカラー↓ */
+.theme-aosuke {
+  --primary-color: #00ffff; 
+  --accent-color: #ff79c6;  
+  --sub-color: #fffb00;    
+  --bg-gradient: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(255, 121, 198, 0.2));
+  --text-on-btn: #333;     
+}
+/* aosukeのテーマカラー↑ */
+
 .creator-profile-main {
    position: relative;
    background-color: var(--bg-base);
