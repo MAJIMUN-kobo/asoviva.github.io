@@ -4,7 +4,9 @@ const categories = [
   { id: 'sticker', name: 'STICKER', icon: 'fa-note-sticky', color: '#66ccff' },
   { id: 'badge', name: 'BADGE', icon: 'fa-certificate', color: '#ffbb33' },
   { id: 'acrylic_stand', name: 'ACRYLIC STAND', icon: 'fa-chess-knight', color: '#44cc88' },
-  { id: 'other', name: 'OTHER GOODS', icon: 'fa-bag-shopping', color: '#b366ff' }
+  {id: 'poster', name: 'POSTER CARD', icon: 'fa-list', color: '#999' },
+  { id: 'other', name: 'OTHER GOODS', icon: 'fa-bag-shopping', color: '#b366ff' },
+ 
 ];
 
 // 商品データ
@@ -89,6 +91,17 @@ const productsDB = [
    {category: 'acrylic_stand', name: 'アクリルスタンドA', price: 800, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png'},
    {category: 'acrylic_stand', name: 'アクリルスタンドB', price: 800, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/akusta/as_ccf63_ririmu1.png'},
    // アクリルスタンド↑
+
+   // ポスターカード
+   {category: 'poster', name: 'ポスターカードA', price: 200, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_64img/poster/サニー・ブリスコー  ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/レン ゾット ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/不破湊 ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/家に来たよ🎶渡会雲雀 ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/渡会雲雀ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キカード.jpg'},
+   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キ共通.jpg'},
+   
+   // ポスターカード
 
 
    // その他グッズ↓
