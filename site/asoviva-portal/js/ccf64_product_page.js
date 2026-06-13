@@ -14,54 +14,49 @@ const productsDB = [
 
    // アクリルキーホルダー↓
    {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/akkey/ak_ccf63_hihachi1.png' },
-   {category: 'keychain', name: 'キーホルダーB', price: 500, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/akkey/ak_ccf63_hachi1.png'},
-   {category: 'keychain', name: 'キーホルダーC', price: 500, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/akkey/ak_ccf63_leaf1.png'},
-   {category: 'keychain', name: 'キーホルダーD', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png'},
-   {category: 'keychain', name: 'キーホルダーD', price: 300, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_hamfish1.png'},
-   {category: 'keychain', name: 'キーホルダーD', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_ririmu1.png'},
-   {category: 'keychain', name: 'キーホルダーD', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_runrun.png'},
-   {category: 'keychain', name: 'キーホルダーD', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_sango1.png'},
-   {category: 'keychain', name: 'キーホルダーD', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_sherin1.png'},
-   {category: 'keychain', name: 'キーホルダーD', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63long_charm1.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/akkey/ak_ccf63_hachi1.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/akkey/ak_ccf63_leaf1.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 300, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_hamfish1.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_ririmu1.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_runrun.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_sango1.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_sherin1.png'},
+   {category: 'keychain', name: 'キーホルダーA', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63long_charm1.png'},
    // アクリルキーホルダー↑
 
    // ステッカー↓
-   {category: 'sticker', name: 'ステッカーA', price: 100, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/sticker/stk_ccf63_hati.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/sticker/stk_ccf63_hati.png'},
    {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/sticker/stk_ccf63_hihachi1.PNG'},
-   {category: 'sticker', name: 'ステッカーC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/sticker/stk_ccf63_kuzuha1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_leaf1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_masiro1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_masiro2.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_masiro3.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito2.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito3.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito4.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_ririmu1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_ririmu2.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_runrun1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_runrun2.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_runrun3.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sango1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sisin1.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sisin2.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sisin3.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sisin4.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_tantei2.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64_kagami02.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64_tyaika02.png'},
-   {category: 'sticker', name: 'ステッカーD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64yasiro01.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/sticker/stk_ccf63_kuzuha1.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_leaf1.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_masiro1.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_masiro3.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito1.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito2.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito3.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_ririmu1.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_runrun1.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_runrun2.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_runrun3.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sango1.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sisin2.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sisin3.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_sisin4.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_tantei2.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64_tyaika02.png'},
+   {category: 'sticker', name: 'ステッカーB', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64yasiro01.png'},
 
    // ステッカー↑
    // ステッカー↑
 
 
    // 缶バッジ↓
-   {category: 'badge', name: '缶バッジA', price: 100, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/badge/bdg_ccf63_gaotti.png'},
-   {category: 'badge', name: '缶バッジB', price: 100, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hachi1.png'},
+   {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/badge/bdg_ccf63_gaotti.png'},
+   {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hachi1.png'},
    {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/badge/bdg_ccf63_harumottto1.png'},
-   {category: 'badge', name: '缶バッジD', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hayatopusu.png'},
+   {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hayatopusu.png'},
    {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hibati1.png'},
    {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hibati2.png'},
    {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_63img/badge/bdg_ccf63_hibati3.png'},
@@ -83,35 +78,39 @@ const productsDB = [
    {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_64img/badge/リト.png'},
    {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_64img/badge/ルべ.png'},
    {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_64img/badge/ロウ.png'},
+   {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_64img/badge/ak_ccf64_fw.png'},
+   {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_64img/badge/ak_ccf64_kgm.png'},
+   {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_64img/badge/ak_ccf64_kid.png'},
+   {category: 'badge', name: '缶バッジC', price: 100, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_64img/badge/ak_ccf64_knmc.png'},
    
    // 缶バッジ↑
 
 
    // アクリルスタンド↓
-   {category: 'acrylic_stand', name: 'アクリルスタンドA', price: 800, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png'},
-   {category: 'acrylic_stand', name: 'アクリルスタンドB', price: 800, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/akusta/as_ccf63_ririmu1.png'},
+   {category: 'acrylic_stand', name: 'アクリルスタンドD', price: 800, creator: 'creator D', copyright: '© 2026 creator A', image: './img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png'},
+   {category: 'acrylic_stand', name: 'アクリルスタンドD', price: 800, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_63img/akusta/as_ccf63_ririmu1.png'},
    // アクリルスタンド↑
 
    // ポスターカード
-   {category: 'poster', name: 'ポスターカードA', price: 200, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_64img/poster/サニー・ブリスコー  ポストカード.png'},
-   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/レン ゾット ポストカード.png'},
-   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/不破湊 ポストカード.png'},
-   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/家に来たよ🎶渡会雲雀 ポストカード.png'},
-   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/渡会雲雀ポストカード.png'},
-   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キカード.jpg'},
-   {category: 'poster', name: 'ポスターカードB', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キ共通.jpg'},
+   {category: 'poster', name: 'ポスターカードE', price: 200, creator: 'creator A', copyright: '© 2026 creator A', image: './img/CCFukuoka_64img/poster/サニー・ブリスコー  ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードE', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/レン ゾット ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードE', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/不破湊 ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードE', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/家に来たよ🎶渡会雲雀 ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードE', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/渡会雲雀ポストカード.png'},
+   {category: 'poster', name: 'ポスターカードE', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キカード.jpg'},
+   {category: 'poster', name: 'ポスターカードE', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キ共通.jpg'},
    
    // ポスターカード
 
 
    // その他グッズ↓
-   {category: 'other', name: 'グッズA', price: 0, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/setuna_img/game_setuna1.png'},
-   {category: 'other', name: 'グッズB', price: 0, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/runrun_img/title_logo_img.png'},
-   {category: 'other', name: 'グッズD', price: 500, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/runrun_img/game_runrun2.jpeg'},
-   {category: 'other', name: 'グッズD', price: 500, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/setuna_img/game_setuna2.jpeg'},
-   {category: 'other', name: 'グッズC', price: 1200, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_62img/sundry_goods/Conceptual_image.png'},
-   {category: 'other', name: 'グッズD', price: 1200, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_62img/sundry_goods/smartphone_strap_omote.png'},
-   {category: 'other', name: 'グッズD', price: 1200, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_62img/sundry_goods/smartphone_strap_ura.png'},
+   {category: 'other', name: 'グッズF', price: 0, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/setuna_img/game_setuna1.png'},
+   {category: 'other', name: 'グッズF', price: 0, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/runrun_img/title_logo_img.png'},
+   {category: 'other', name: 'グッズF', price: 500, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/runrun_img/game_runrun2.jpeg'},
+   {category: 'other', name: 'グッズF', price: 500, creator: 'カピムン', copyright: '© 2026 creator カピムン', image: './img/game/setuna_img/game_setuna2.jpeg'},
+   {category: 'other', name: 'グッズF', price: 1200, creator: 'creator C', copyright: '© 2026 creator C', image: './img/CCFukuoka_62img/sundry_goods/Conceptual_image.png'},
+   {category: 'other', name: 'グッズF', price: 1200, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_62img/sundry_goods/smartphone_strap_omote.png'},
+   {category: 'other', name: 'グッズF', price: 1200, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_62img/sundry_goods/smartphone_strap_ura.png'},
    // その他グッズ↑
 ];
 

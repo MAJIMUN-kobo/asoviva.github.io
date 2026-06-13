@@ -95,3 +95,15 @@ document.addEventListener('DOMContentLoaded', renderZones);
 // 商品のピックアップ↑
 
 
+// お知らせバー
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.getElementById('closeNoticeBtn');
+    const noticeBar = document.getElementById('topNoticeBar');
+
+    if (closeBtn && noticeBar) {
+      closeBtn.addEventListener('click', function() {
+        noticeBar.style.display = 'none'; 
+      });
+    }
+  });
+  // お知らせバー
