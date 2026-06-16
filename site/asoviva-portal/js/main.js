@@ -30,69 +30,102 @@ const swiper = new Swiper(".mySwiper", {
 // Swiperの設定↑
 
 
-// 商品ピックアップ↓
-const productData = [
-  // 一行目
-  { id: 1, category: "aksta", name: "アクリルキーホルダー", price: "500", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_kuzuha.png" },
-  { id: 2, category: "sticker", name: "ステッカー", price: "100", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei.png" },
-  { id: 3, category: "3d", name: "3Dキーホルダー", price: "500", img: "./img/CCFukuoka_62img/keyring/key_ccf62_koogii8.jpg" },
-  { id: 4, category: "badge", name: "缶バッジ", price: "100", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_usanomito.png" },
-  { id: 5, category: "aksta_stand", name: "アクリルスタンド", price: "500", img: "./img/CCFukuoka_63img/akusta/as_ccf63_runrun1.png" },
-
-  // 二行目
-  { id: 6, category: "aksta", name: "アクリルキーホルダー", price: "500", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_sherin1.png" },
-  { id: 7, category: "sticker", name: "ステッカー", price: "100", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_hihachi1.PNG" },
-  { id: 8, category: "3d", name: "3Dキーホルダー", price: "500", img: "./img/CCFukuoka_62img/keyring/key_ccf62_harumotto3.jpg" },
-  { id: 9, category: "badge", name: "缶バッジ", price: "100", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_kanae1.png" },
- 
-
-  // 三行目
-  { id: 11, category: "aksta", name: "アクリルキーホルダー", price: "500", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_hachi1.png" },
-  { id: 12, category: "sticker", name: "ステッカー", price: "100", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_runrun1.png" },
-  { id: 13, category: "3d", name: "3Dキーホルダー", price: "500", img: "./img/CCFukuoka_62img/keyring/key_ccf62_syenrin10.jpg" },
-  { id: 14, category: "badge", name: "缶バッジ", price: "100", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_runrun2.png" },
- 
-
-  // 四行目
-  { id: 16, category: "aksta", name: "アクリルキーホルダー", price: "500", img: "./img/CCFukuoka_63img/akkey/ak_ccf63_sango1.png" },
-  { id: 17, category: "sticker", name: "ステッカー", price: "100", img: "./img/CCFukuoka_63img/sticker/stk_ccf63_tantei2.png" },
-  { id: 18, category: "3d", name: "3Dキーホルダー", price: "500", img: "./img/CCFukuoka_62img/keyring/key_ccf62_mana7.jpg" },
-  { id: 19, category: "badge", name: "缶バッジ", price: "100", img: "./img/CCFukuoka_63img/badge/bdg_ccf63_hibati3.png" },
- 
+// おしながきデータA4サイズ画像↓
+const oshimagakiData = [
+  { 
+    id: 1, 
+    title: "CC福岡64 新刊おしながき", 
+    creator: "作者A", 
+    img: "./img/main_imgs/itayaosinagaki.png" 
+  },
+  { 
+    id: 2, 
+    title: "CC福岡64 新刊おしながき", 
+    creator: "作者B", 
+    img: "./img/main_imgs/itayaosinagaki.png" 
+  },
+  { 
+    id: 3, 
+    title: "CC福岡64 新刊おしながき", 
+    creator: "作者C", 
+    img: "./img/main_imgs/itayaosinagaki.png" 
+  },
+  { 
+    id: 4, 
+    title: "CC福岡64 新刊おしながき", 
+    creator: "作者D", 
+    img: "./img/main_imgs/itayaosinagaki.png" 
+  }
 ];
 
-function renderZones() {
-  const grids = {
-    '3d': document.getElementById('grid_3d'),
-    'aksta': document.getElementById('grid_aksta'),
-    'sticker': document.getElementById('grid_sticker'),
-    'badge': document.getElementById('grid_badge'),
-    'aksta_stand': document.getElementById('grid_aksta_stand'),
-  };
+function renderOshimagaki() {
+  const grid = document.getElementById('oshimagaki_grid');
+  if (!grid) return;
 
-  Object.values(grids).forEach(g => { if(g) g.innerHTML = ''; });
+  grid.innerHTML = '';
 
-  productData.forEach(item => {
-    const targetGrid = grids[item.category];
-    if (targetGrid) {
-      const cardHtml = `
-        <article class="asoviva_card">
-          <div class="card_img_box">
-            <img src="${item.img}" alt="${item.name}">
+  oshimagakiData.forEach(item => {
+    const cardHtml = `
+      <article class="oshimagaki_card">
+        <div class="card_img_box">
+          <img src="${item.img}" alt="${item.title}">
+        </div>
+        <div class="card_info">
+          <h4 class="item_title">${item.title}</h4>
+          <div class="creator_tag">
+            <span class="creator_label">Creator</span>
+            <span class="creator_name">${item.creator}</span>
           </div>
-          <div class="card_info">
-            <h4 class="item_name">${item.name}</h4>
-            <div class="price_tag"><small>¥</small>${item.price}</div>
-          </div>
-        </article>
-      `;
-      targetGrid.insertAdjacentHTML('beforeend', cardHtml);
-    }
+        </div>
+      </article>
+    `;
+    grid.insertAdjacentHTML('beforeend', cardHtml);
   });
 }
+document.addEventListener('DOMContentLoaded', renderOshimagaki);
 
-document.addEventListener('DOMContentLoaded', renderZones);
-// 商品のピックアップ↑
+function initModal() {
+  const modal = document.getElementById('image_modal');
+  const modalImg = document.getElementById('modal_img');
+  const closeBtn = document.querySelector('.modal_close');
+  const grid = document.getElementById('oshimagaki_grid');
+
+  if (!modal || !modalImg || !grid) return;
+
+  grid.addEventListener('click', (e) => {
+    const targetImg = e.target.closest('.card_img_box img');
+    if (targetImg) {
+      modal.style.display = 'flex'; 
+      setTimeout(() => {
+        modal.classList.add('show'); 
+      }, 10);
+      modalImg.src = targetImg.src;
+      modalImg.alt = targetImg.alt;
+      document.body.style.overflow = 'hidden'; 
+    }
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  function closeModal() {
+    modal.classList.remove('show');
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 300); 
+    document.body.style.overflow = ''; 
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderOshimagaki(); 
+  initModal();       
+});
+// おしながきデータA4サイズ画像↑
+
 
 
 // お知らせバー

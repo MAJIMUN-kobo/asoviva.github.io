@@ -529,7 +529,7 @@ body {
 }
 /* ASOVIVAとは↑ */
 
-/* ピックアップ商品↓*/
+/* ピックアップ商品↓ *//* おしながきセクション↓ */
 :root {
   --primary-pink: #ff66aa;
   --primary-blue: #66ccff;
@@ -539,11 +539,12 @@ body {
   --bg-dot: #e0eaf5;
 }
 
-.pick_up_section {
+.oshimagaki_section {
    padding: 60px 0px;
    background-image: radial-gradient(var(--bg-dot) 2px, transparent 2px);
    background-size: 30px 30px;
 }
+
 .section_title {
    text-align: center;
    font-size: 32px;
@@ -551,78 +552,190 @@ body {
    margin-bottom: 60px;
 }
 
-.container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-.product_zone {
-   margin-bottom: 80px;
-   padding: 20px;
-   border-radius: 30px;
-   background: rgba(255, 255, 255, 0.5);
-}
-
-.zone_3d {border-left: 10px solid var(--primary-blue);}
-.zone_aksta{border-left: 10px solid var(--primary-pink);}
-.zone_sticker{border-left: 10px solid var(--accent-yellow);}
-.zone_badge{border-left: 10px solid var(--accent-green);}
-.zone_aksta_stand {border-left: 10px solid var(--primary-blue);}
-
-.zone_name {
-   font-size: 24px;
-   font-weight: 900;
-   margin-bottom: 25px;
-   display: inline-block;
-   padding: 5px 20px;
-   background: var(--border-dark);
-   color: #fff;
-   gap: 25px;
-   transform: skew(-10deg); /* タイトルを斜めにする */
-}
-
-/* グリッド */
-.product_grid {
+/* 4列のグリッド配置 */
+.oshimagaki_grid {
    display: grid;
-   grid-template-columns: repeat(4, 1fr); /* ここを固定にする */
+   grid-template-columns: repeat(4, 1fr);
    gap: 25px;
 }
 
-.asoviva_card {
+/* おしながきカードのデザイン（既存のカード風の枠線を継承） */
+.oshimagaki_card {
    background-color: #fff;
    border: 3px solid var(--border-dark);
    border-radius: 16px;
    padding: 12px;
-   transform: all 0.3s cubic-bezier(0.175,0.885,0.32,1.2);
+   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.2);
    box-shadow: 6px 6px 0 var(--border-dark);
+   display: flex;
+   flex-direction: column;
 }
 
-.asoviva_card:hover {
+/* ホバー時のアニメーション */
+.oshimagaki_card:hover {
    transform: translateY(-5px) rotate(1deg);
-   box-shadow: 10px 10px 0 var(--primary-pink);
+   box-shadow: 10px 10px 0 var(--primary-blue);
 }
 
-.card_img_box {
-   aspect-ratio: 1 / 1;
+/* 画像をA4サイズ（210:297）の比率で固定するボックス */
+.oshimagaki_card .card_img_box {
+   aspect-ratio: 210 / 297; /* A4の縦長比率 */
    border-radius: 10px;
    overflow: hidden;
    border: 2px solid var(--border-dark);
-   margin-bottom: 10px;
+   margin-bottom: 12px;
+   background-color: #f5f5f5;
 }
 
-.card_img_box img { width: 100%; height: 100%; object-fit: cover; }
+.oshimagaki_card .card_img_box img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* 画像を枠内に綺麗に収める */
+}
 
+/* テキスト情報エリア */
+.oshimagaki_card .card_info {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   flex-grow: 1;
+   justify-content: space-between;
+}
 
+/* おしながきタイトル */
+.oshimagaki_card .item_title {
+   font-size: 15px;
+   font-weight: 900;
+   color: var(--border-dark);
+   line-height: 1.4;
+   margin: 0;
+   /* タイトルが長くなった場合、2行で省略する設定 */
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   overflow: hidden;
+}
+
+/* 作者名（クリエイター）タグ */
+.oshimagaki_card .creator_tag {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   font-size: 12px;
+}
+
+/* 「Creator」の黄色いラベル */
+.oshimagaki_card .creator_label {
+   background: var(--accent-yellow);
+   color: var(--border-dark);
+   font-weight: 900;
+   padding: 2px 6px;
+   border-radius: 4px;
+   border: 1px solid var(--border-dark);
+   font-size: 10px;
+   text-transform: uppercase;
+}
+
+.oshimagaki_card .creator_name {
+   font-weight: 700;
+   color: #555;
+}
+
+/* レスポンシブ対応（画面が狭いときは2列にする） */
 @media screen and (max-width: 1024px) {
-   .product_grid {
-      grid-template-columns: repeat(2, 1fr); /* タブレットサイズで2列に */
+   .oshimagaki_grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
    }
 }
 
 @media screen and (max-width: 600px) {
-   .product_grid {
-      grid-template-columns: repeat(2,1fr);
+   .oshimagaki_grid {
+      grid-template-columns: repeat(2, 1fr);
       gap: 15px;
    }
-   .zone_name{font-size: 20px;}
+   .oshimagaki_card .item_title {
+      font-size: 13px;
+   }
 }
+
+
+/* 画像にカーソルを拡大する */
+.oshimagaki_card .card_img_box {
+   cursor: pointer;
+}
+
+.image_modal {
+   display: none;
+   position: fixed;
+   z-index: 9999; 
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.85); 
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+
+.image_modal.show {
+   opacity: 1;
+}
+
+.modal_content {
+   max-width: 90%;
+   max-height: 90vh;
+   object-fit: contain;
+   border: 4px solid var(--border-dark); 
+   border-radius: 16px;
+   background-color: #fff;
+   transform: scale(0.9);
+   transition: transform 0.3s ease;
+}
+
+
+.image_modal.show .modal_content {
+   transform: scale(1);
+}
+
+.modal_close {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   color: #fff;
+   font-size: 40px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: transform 0.2s;
+}
+
+.modal_close:hover {
+   transform: scale(1.2);
+   color: var(--primary-pink); 
+}
+
+
+@media screen and (max-width: 600px) {
+   .modal_content {
+      max-width: 95%;
+      border-width: 3px;
+   }
+   .modal_close {
+      top: 15px;
+      right: 20px;
+      font-size: 35px;
+   }
+}
+/* 画像にカーソルを拡大する */
+
+/* おしながきセクション↑ */
+
+
 /* ピックアップ商品↑ */
 
 /* ニュース・お知らせ↓ */
