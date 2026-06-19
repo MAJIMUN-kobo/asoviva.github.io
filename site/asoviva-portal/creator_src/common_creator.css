@@ -491,6 +491,20 @@ body {
 }
 /* よし・ひらのテーマカラー↑ */
 
+/* しらすごはんのテーマカラー↓ */
+.theme-sirasugohann {
+  --primary-color: #23dbb9; /* メイン：鮮やかなミントグリーン */
+  --accent-color: #ffd633;  /* アクセント：ポップイエロー */
+  --sub-color: #ff6b8b;     /* サブ：相性抜群のキャッチーなピンク */
+  
+  /* ミントからゴールドイエローへ綺麗に変化する、エネルギッシュなグラデーション */
+  --bg-gradient: linear-gradient(135deg, rgba(35, 219, 185, 0.25), rgba(255, 214, 51, 0.25));
+  --text-on-btn: #2c2c2c;   /* どちらも明るい色のため、ボタン上の文字は読みやすい暗めの色に */
+}
+/* しらすごはんのテーマカラー↑ */
+
+
+
 .creator-profile-main {
    position: relative;
    background-color: var(--bg-base);
