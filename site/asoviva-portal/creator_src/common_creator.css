@@ -483,9 +483,9 @@ body {
 
 /* よし・ひらのテーマカラー↓ */
 .theme-kakazu {
-  --primary-color: #6a86ff; /* 鮮やかなブルー */
-  --accent-color: #f54189;  /* ネオンピンク */
-  --sub-color: #fff176;     /* キラキラ感を足すネオンイエロー */
+  --primary-color: #6a86ff; 
+  --accent-color: #f54189;  
+  --sub-color: #fff176;     
   --bg-gradient: linear-gradient(135deg, rgba(106, 134, 255, 0.2), rgba(245, 65, 137, 0.2));
   --text-on-btn: #fff;
 }
@@ -493,17 +493,24 @@ body {
 
 /* しらすごはんのテーマカラー↓ */
 .theme-sirasugohann {
-  --primary-color: #23dbb9; /* メイン：鮮やかなミントグリーン */
-  --accent-color: #ffd633;  /* アクセント：ポップイエロー */
-  --sub-color: #ff6b8b;     /* サブ：相性抜群のキャッチーなピンク */
+  --primary-color: #23dbb9; 
+  --accent-color: #ffd633;  
+  --sub-color: #ff6b8b;     
   
-  /* ミントからゴールドイエローへ綺麗に変化する、エネルギッシュなグラデーション */
+ 
   --bg-gradient: linear-gradient(135deg, rgba(35, 219, 185, 0.25), rgba(255, 214, 51, 0.25));
-  --text-on-btn: #2c2c2c;   /* どちらも明るい色のため、ボタン上の文字は読みやすい暗めの色に */
+  --text-on-btn: #2c2c2c;   
 }
 /* しらすごはんのテーマカラー↑ */
 
-
+/* ねねのテーマカラー */
+.theme-nene {
+  --primary-color: #fadbda; 
+  --accent-color: #bde0fe;  
+  --sub-color: #ffecb3;     
+  --bg-gradient: linear-gradient(135deg, rgba(250, 219, 218, 0.35), rgba(189, 224, 254, 0.35));
+  --text-on-btn: #4a3b42;  
+}
 
 .creator-profile-main {
    position: relative;
