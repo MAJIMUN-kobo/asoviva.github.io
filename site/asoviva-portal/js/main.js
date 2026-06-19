@@ -48,7 +48,7 @@ const oshimagakiData = [
     id: 3, 
     title: "CC福岡64 おしながき", 
     creator: "しらすごはん", 
-    img: "../img/main_imgs/ガチャガチャシート.jpg" 
+    img: "./img/main_imgs/ガチャガチャシート.jpg" 
   },
   { 
     id: 4, 
@@ -60,13 +60,13 @@ const oshimagakiData = [
     id: 5, 
     title: "CC福岡64 おしながき", 
     creator: "47", 
-    img: "../img/main_imgs/田中偲月 お品書き.png" 
+    img: "./img/main_imgs/田中偲月 お品書き.png" 
   },
   { 
     id: 6, 
     title: "CC福岡64 おしながき", 
     creator: "作者C", 
-    img: "../img/main_imgs/吉田美沙＿おしながき.png" 
+    img: "./img/main_imgs/吉田美沙＿おしながき.png" 
   },
 ];
 

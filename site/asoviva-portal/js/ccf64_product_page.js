@@ -100,7 +100,7 @@ const productsDB = [
    {category: 'poster', name: '渡会雲雀Bポストカード', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/渡会雲雀ポストカード.png'},
    {category: 'poster', name: '加賀美&チャイカ&社築ポストカード', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キカード.jpg'},
    {category: 'poster', name: '加賀美&チャイカ&社築ポストカード', price: 200, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/雑キ共通.jpg'},
-   {category: 'poster', name: '周央サンゴポストカード', price: 300, creator: 'creator B', copyright: '© 2026 creator B', image: './img/CCFukuoka_64img/poster/周央サンゴ_ポストカード.pngg'},
+   {category: 'poster', name: '周央サンゴポストカード', price: 300, creator: 'creator B', copyright: '© 2026 creator B', image: '../img/CCFukuoka_64img/poster/周央サンゴ_ポストカード.png'},
    
    // ポスターカード
 
