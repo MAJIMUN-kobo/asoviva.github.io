@@ -21,7 +21,7 @@ const productsDB = [
    {category: 'keychain', name: 'ハムさかな', price: 300, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_hamfish1.png'},
    {category: 'keychain', name: '魔界ノりりむ', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_ririmu1.png'},
    {category: 'keychain', name: 'ルンルン（王冠）', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_runrun.png'},
-   {category: 'keychain', name: '周央サンゴ', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_sango1.png'},
+   // {category: 'keychain', name: '周央サンゴ', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_sango1.png'},
    {category: 'keychain', name: 'シェリン・バーガンディ', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63_sherin1.png'},
    {category: 'keychain', name: 'ろふまるつながりロングチャーム', price: 500, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/akkey/ak_ccf63long_charm1.png'},
    // アクリルキーホルダー↑
@@ -34,7 +34,7 @@ const productsDB = [
    {category: 'sticker', name: 'ましろ爻セット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_masiro1.png'},
    // {category: 'sticker', name: 'ましろ爻セット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_masiro3.png'},
    // {category: 'sticker', name: '月ノ美兎セット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito1.png'},
-   {category: 'sticker', name: '月ノ美兎セット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito2.png'},
+   // {category: 'sticker', name: '月ノ美兎セット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito2.png'},
    // {category: 'sticker', name: '月ノ美兎セット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_mito3.png'},
    {category: 'sticker', name: '魔界ノりりむセット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_ririmu1.png'},
    // {category: 'sticker', name: 'ルンルンセット', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_63img/sticker/stk_ccf63_runrun1.png'},
