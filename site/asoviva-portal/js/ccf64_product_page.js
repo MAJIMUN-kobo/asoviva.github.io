@@ -50,6 +50,7 @@ const productsDB = [
    {category: 'sticker', name: '花畑チャイカ', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64_tyaika02.png'},
    {category: 'sticker', name: '社築（やしろ きずく）', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64yasiro01.png'},
    {category: 'sticker', name: '加賀美ハヤト', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/stk_ccf64_kagami02.png'},
+   {category: 'sticker', name: '渡会雲雀ミニキャラステッカー', price: 100, creator: 'creator D', copyright: '© 2026 creator D', image: './img/CCFukuoka_64img/sticker/渡会雲雀ミニキャラステッカー.png'},
    // ステッカー↑
 
 
